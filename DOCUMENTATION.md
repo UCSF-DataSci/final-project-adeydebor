@@ -75,8 +75,8 @@ The music industry struggles to predict which songs will achieve viral success, 
 - **Stage 2 - Automated Python Deduplication:** Systematic removal of true duplicates (same track + same artist) while preserving legitimate different versions
 - **Rationale:** Ensures data integrity while maintaining different versions of songs by different artists
 - **Process:** 
- - Manual: ISRC-based duplicate identification and removal
- - Automated: Keep highest-streaming version when same track name + same artist appear multiple times
+  - Manual: ISRC-based duplicate identification and removal
+  - Automated: Keep highest-streaming version when same track name + same artist appear multiple times
 - **Trade-off:** Required both manual and automated steps but ensured comprehensive duplicate handling
 
 ### **2. Viral Threshold Selection**
@@ -105,15 +105,15 @@ The music industry struggles to predict which songs will achieve viral success, 
 - **Issue:** Original dataset contained both incorrect duplicate entries and legitimate different versions of songs
 - **Solution:** Implemented comprehensive two-stage deduplication strategy
 - **Stage 1 - Manual ISRC Cleaning:**
- - Exported dataset to Excel for manual review
- - Used ISRC (International Standard Recording Code) as unique song identifier
- - Identified songs with same ISRC but different metadata entries
- - Removed duplicate entries while preserving most complete/accurate records
+  - Exported dataset to Excel for manual review
+  - Used ISRC (International Standard Recording Code) as unique song identifier
+  - Identified songs with same ISRC but different metadata entries
+  - Removed duplicate entries while preserving most complete/accurate records
 - **Stage 2 - Automated Python Deduplication (Section 2.3):**
- - Identified potential duplicates by track name using `duplicated()` function
- - Distinguished between legitimate different versions (same track, different artists) and true duplicates (same track + same artist)
- - Applied strategy: Keep highest-streaming version for true duplicates, preserve all legitimate different versions
- - Systematic removal using `drop_duplicates(subset=['Track', 'Artist'], keep='first')` after sorting by streams
+  - Identified potential duplicates by track name using `duplicated()` function
+  - Distinguished between legitimate different versions (same track, different artists) and true duplicates (same track + same artist)
+  - Applied strategy: Keep highest-streaming version for true duplicates, preserve all legitimate different versions
+  - Systematic removal using `drop_duplicates(subset=['Track', 'Artist'], keep='first')` after sorting by streams
 - **Outcome:** Clean dataset with accurate unique song entries and preserved legitimate song variations
 
 ### **2. Data Quality Challenges**
@@ -144,13 +144,19 @@ pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 ```
 
 ## Repository Structure:
-viral-music-prediction/
-├── README.md
-├── PROJECT_DOCUMENTATION.md
-├── viral_music_analysis.ipynb
-├── requirements.txt
-├── data/
-│   └── spotify_data.csv
+final-project-adeydebor/
+
+  ├── README.md
+  
+  ├── DOCUMENTATION.md
+  
+  ├── viral_song_analysis.ipynb
+  
+  ├── requirements.txt
+  
+  ├── data/
+  
+  │   └── spotify_streams_2024.csv
 
 ### **Execution Steps:**
 1. **Data Preprocessing (Manual):**
@@ -162,7 +168,7 @@ viral-music-prediction/
 2. **Clone Repository:**
    ```bash
    git clone [repository-url]
-   cd viral-music-prediction
+   cd final-project-adeydebor
    ```
 3. **Install Dependencies:**
   ```bash
@@ -170,7 +176,7 @@ viral-music-prediction/
   ```
 4. **Launch Jupyter Notebook:**
   ```bash
-  jupyter notebook viral_music_analysis.ipynb
+  jupyter notebook viral_song_analysis.ipynb
   ```
 5. **Run Analysis:**
   - Execute cells sequentially from Section 1 through Section 8
