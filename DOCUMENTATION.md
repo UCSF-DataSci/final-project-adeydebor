@@ -263,14 +263,24 @@ The consistency between logistic regression and Random Forest models, combined w
 ### **Data Sources:**
 - Nelgiriyewithana. (2024). *Most Streamed Spotify Songs 2024*. Kaggle. https://www.kaggle.com/datasets/nelgiriyewithana/most-streamed-spotify-songs-2024
 
-### **Technical References:**
-- Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python. *Journal of Machine Learning Research*, 12, 2825-2830.
-- McKinney, W. (2010). Data structures for statistical computing in Python. *Proceedings of the 9th Python in Science Conference*, 56-61.
-- Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. *Computing in Science & Engineering*, 9(3), 90-95.
+### Technical and Methodological References
 
-### **Methodological References:**
-- Breiman, L. (2001). Random forests. *Machine Learning*, 45(1), 5-32.
+- Breiman, L. (2001). Random forests. *Machine Learning*, 45(1), 5–32.
+
+- Fawcett, T. (2006). An introduction to ROC analysis. *Pattern Recognition Letters*, 27(8), 861–874.
+
+- Guyon, I., & Elisseeff, A. (2003). An introduction to variable and feature selection. *Journal of Machine Learning Research*, 3, 1157–1182.
+
+- Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. *Computing in Science & Engineering*, 9(3), 90–95.
+
 - Hosmer Jr, D. W., Lemeshow, S., & Sturdivant, R. X. (2013). *Applied logistic regression* (Vol. 398). John Wiley & Sons.
-- Fawcett, T. (2006). An introduction to ROC analysis. *Pattern Recognition Letters*, 27(8), 861-874.
+
+- Kuhn, M., & Johnson, K. (2013). *Applied predictive modeling*. Springer.
+
+- Little, R. J. A., & Rubin, D. B. (2002). *Statistical analysis with missing data* (2nd ed.). Wiley.
+
+- McKinney, W. (2010). Data structures for statistical computing in Python. *Proceedings of the 9th Python in Science Conference*, 56–61.
+
+- Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... & Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. *Journal of Machine Learning Research*, 12, 2825–2830.
 
 _Claude AI and ChatGPT were used to assist in developing this code._
