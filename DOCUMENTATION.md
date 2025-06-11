@@ -42,7 +42,7 @@ The music industry struggles to predict which songs will achieve viral success, 
 ## Tools and Methods
 
 ### **Programming Environment:**
-- **Language:** Python v2025.6.1
+- **Language:** Python 3.12.1
 - **Key Libraries:** scikit-learn, pandas, numpy, matplotlib, seaborn
 - **Platform:** Jupyter Notebook
 
@@ -186,12 +186,24 @@ final-project-adeydebor/
 
 ### **Expected Outputs (Displayed in Notebook):**
 All results are displayed inline within the Jupyter notebook cells:
-- Data exploration statistics and visualizations
-- Correlation matrix heatmap
-- Model performance metrics (accuracy, AUC, confusion matrices)
-- ROC curves comparison
-- Feature importance plots and coefficients
-- Top 10 viral songs analysis with streaming statistics
+
+**Data Exploration:**
+- Balanced viral/non-viral distribution (2,294 vs 2,194 songs)
+- Spotify streams distribution with median viral threshold (232M streams)
+- Release year patterns showing recent song dominance
+- Cross-platform engagement correlation analysis
+
+**Model Performance Visualizations:**
+- ROC curves comparing Logistic Regression (AUC=0.952) vs Random Forest (AUC=0.983)
+- Feature importance rankings across both models
+- Logistic regression odds ratios highlighting 46× playlist advantage
+- Cross-platform engagement patterns (viral vs non-viral boxplots)
+
+**Key Insights Visualized:**
+- Spotify playlist dominance in both models (28.2% RF importance, 46× LR odds ratio)
+- Cross-platform correlation matrix showing platform interconnections
+- Temporal analysis revealing recency bias in viral success
+- TikTok metrics showing modest negative correlation with viral success
 
 ## Example Output
 
