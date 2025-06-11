@@ -42,7 +42,7 @@ The music industry struggles to predict which songs will achieve viral success, 
 ## Tools and Methods
 
 ### **Programming Environment:**
-- **Language:** Python 3.x
+- **Language:** Python v2025.6.1
 - **Key Libraries:** scikit-learn, pandas, numpy, matplotlib, seaborn
 - **Platform:** Jupyter Notebook
 
